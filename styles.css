@@ -220,13 +220,16 @@ nav a {
   border-radius: 16px;
   box-shadow: 0 12px 34px rgba(0,0,0,.05);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   overflow: hidden;
 }
 
 .service-strip article {
-  padding: 26px 30px;
-  border-right: 1px solid var(--line);
+    min-height: 240px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-strip article:last-child {
