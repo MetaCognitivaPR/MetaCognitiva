@@ -108,17 +108,11 @@ nav a {
 
 .hero {
   background:
-    linear-gradient(
-      90deg,
-      rgba(248,244,236,.96) 0%,
-      rgba(248,244,236,.88) 45%,
-      rgba(248,244,236,.35) 75%
-    ),
-    url("images/office-background.jpg");
-
+    linear-gradient(90deg, rgba(248,244,236,.98) 0%, rgba(248,244,236,.88) 38%, rgba(248,244,236,.25) 68%),
+    url("images/clinica.jpg");
   background-size: cover;
-  background-position: center center;
-  padding: 90px 0;
+  background-position: center right;
+  padding: 78px 0 64px;
 }
 
 .hero-grid {
@@ -273,7 +267,7 @@ nav a {
 
 .symptoms-card,
 .patient-info-card {
-  background: #0f4f4b;
+  background: #fbfbf6;
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 30px;
@@ -336,14 +330,11 @@ nav a {
 }
 
 .info-mini-grid article {
-  background: #ffffff;
-  border: 1px solid #dfe8e5;
-  transition: 0.3s;
-}
-
-.info-mini-grid article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  background: white;
+  border: 1px solid var(--line);
+  padding: 28px 22px;
+  text-align: center;
+  min-height: 190px;
 }
 
 /* TEAM */
@@ -364,7 +355,10 @@ nav a {
 }
 
 .team-grid {
-  grid-template-columns: repeat(2, minmax(420px, 1fr));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  width: 100%;
 }
 
 .team-card {
@@ -372,7 +366,7 @@ nav a {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 34px;
-  min-height: 320px;
+  min-height: 230px;
   box-shadow: 0 12px 30px rgba(0,0,0,.04);
 }
 
@@ -439,11 +433,10 @@ nav a {
   align-items: stretch;
 }
 
-.location-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 420px;
+.location-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
 }
 
 .location-card {
@@ -468,7 +461,8 @@ nav a {
 
 .location-card iframe {
   width: 100%;
-  height: 260px;
+  height: 180px;
+  border: 0;
   border-radius: 10px;
 }
 
